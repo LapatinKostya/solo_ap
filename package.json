@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "sb": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "rename-icons": "node scripts/rename-icons.cjs",
+    "replace-colors": "node scripts/replace-colors.cjs",
+    "generate-icons": "pnpm rename-icons && pnpx @svgr/cli --out-dir src/shared/assets/icons/components --jsx-runtime automatic --typescript --ref --memo  -- src/shared/assets/icons/svg && pnpm replace-colors"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.1.1",
