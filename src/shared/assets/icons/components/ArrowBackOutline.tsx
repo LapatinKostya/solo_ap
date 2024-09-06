@@ -21,7 +21,7 @@ const SvgArrowBackOutline = (
     <defs>
       <clipPath id='arrow-back-outline_svg__a'>
         <path
-          fill='currentcolor'
+          fill='currentColor'
           d='M0 0h24v24H0z'
         />
       </clipPath>

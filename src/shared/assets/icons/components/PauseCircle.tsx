@@ -21,7 +21,7 @@ const SvgPauseCircle = (
     <defs>
       <clipPath id='pause-circle_svg__a'>
         <path
-          fill='#fff'
+          fill='currentColor'
           d='M0 0h24v24H0z'
         />
       </clipPath>

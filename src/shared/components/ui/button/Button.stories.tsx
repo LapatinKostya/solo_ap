@@ -16,31 +16,42 @@ type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    children: 'Primary',
+    children: 'Button',
     disabled: false,
+  },
+}
+export const PrimaryDisabled: Story = {
+  args: {
+    children: 'Button',
+    disabled: true,
   },
 }
 
 export const Secondary: Story = {
   args: {
-    ...Primary.args,
-    children: 'Secondary',
+    children: 'Button',
     variant: 'secondary',
+    disabled: false,
   },
 }
 
 export const Outline: Story = {
   args: {
-    ...Primary.args,
-    children: 'Outline',
+    children: 'Button',
     variant: 'outline',
+  },
+}
+export const Text: Story = {
+  args: {
+    ...Primary.args,
+    variant: 'text',
   },
 }
 
 export const AsLink: Story = {
   args: {
     ...Primary.args,
-    variant: 'link',
+    variant: 'text',
     asChild: true,
     children: <a href={'/'}>Link button</a>,
   },

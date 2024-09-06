@@ -37,7 +37,7 @@ const buttonVariants = cva(
           'disabled:text-accent-900',
           'disabled:border-accent-900',
         ],
-        link: [
+        text: [
           'text-accent-500',
           'hover:text-accent-100',
           'active:text-accent-700',
