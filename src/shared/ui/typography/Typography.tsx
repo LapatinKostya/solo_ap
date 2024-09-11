@@ -2,7 +2,6 @@ import * as React from 'react'
 import { ComponentPropsWithoutRef, ElementRef, forwardRef } from 'react'
 import { Slot } from '@radix-ui/react-slot'
 import { cva, VariantProps } from 'class-variance-authority'
-import { buttonVariants } from '@/shared/components'
 import { cn } from '@/shared/utils'
 
 const typographyVariants = cva([], {
@@ -41,12 +40,6 @@ const typographyVariants = cva([], {
     variant: 'regular_text_14',
   },
 })
-
-interface TypographyProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
-  asChild?: boolean
-}
 
 type Props = {
   asChild?: boolean
